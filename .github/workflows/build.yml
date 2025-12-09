@@ -54,5 +54,5 @@ jobs:
       mode: development
     steps:
       - name: Load environment variables
-        run: echo "Base url is ${{env.BASE_URL}}"     
+        run: echo "Base url is ${{vars.BASE_URL}}"     
         
