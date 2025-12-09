@@ -60,4 +60,11 @@ jobs:
         run: echo "Base url is $BASE_URL" 
       - name: Run js file
         run: node logger.js
+
+  create-note-file:
+    runs-on: ubuntu-latest
+    steps:
+        - name: Create note file
+        - run: touch note.txt
+   
         
