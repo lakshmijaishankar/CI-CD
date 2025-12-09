@@ -57,5 +57,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Load environment variables
-        run: echo "Base url is $BASE_URL"     
+        run: echo "Base url is $BASE_URL" 
+      - name: Run js file
+        run: node logger.js
         
