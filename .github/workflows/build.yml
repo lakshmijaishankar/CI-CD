@@ -54,7 +54,6 @@ jobs:
     runs-on: ubuntu-latest
     env:
       mode: development
-      BASE_URL: ${{ env.BASE_URL }}
     steps:
       - name: Load environment variables
         run: echo "Base url is $BASE_URL"     
