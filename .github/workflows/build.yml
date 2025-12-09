@@ -52,7 +52,8 @@ jobs:
     runs-on: ubuntu-latest
     env:
       mode: development
+      BASE_URL: "${{secrets.BASE_URL}}"
     steps:
       - name: Load environment variables
-        run: echo "Node mode is $mode"     
+        run: echo "Base url is $BASE_URL"     
         
