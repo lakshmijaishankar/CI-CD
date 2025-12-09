@@ -47,5 +47,12 @@ jobs:
           node-version: '18'
       - name: Node version
         run: node -v 
-        
+
+  load-env:
+    runs-on: ubuntu-latest
+    env:
+      mode: development
+    steps:
+      - name: Load environment variables
+        run: echo "Node mode is $mode"     
         
